@@ -4,9 +4,20 @@ public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        String str = String.valueOf(x);
+        boolean flag = true;
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.getNumericValue(str.charAt(0)) % 2 != 0) {
+                flag = false;
+                break;
+            }
+        }
 
-        return "FALSE";
+        if (flag) {
+            return "true";
+        } else {
+            return "false";
+        }
     }
 
     public static void main(String[] args) {
