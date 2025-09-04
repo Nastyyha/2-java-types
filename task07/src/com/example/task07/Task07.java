@@ -4,9 +4,11 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int vertic = n/k;
+        int goriz = m/k;
 
-        return 0;
+        return vertic*goriz;
+
     }
 
     public static void main(String[] args) {
