@@ -14,7 +14,7 @@ public class Task04 {
                 if (b == 0) {
                     throw new ArithmeticException("деление на ноль");
                 }
-                return a / b;
+                return (float) a / b;
             case "*":
                 return a * b;
 
