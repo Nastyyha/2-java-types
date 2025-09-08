@@ -5,19 +5,15 @@ public class Task05 {
     public static String solution(int x) {
 
         String str = String.valueOf(x);
-        boolean flag = true;
+
         for (int i = 0; i < str.length(); i++) {
-            if (Character.getNumericValue(str.charAt(0)) % 2 != 0) {
-                flag = false;
-                break;
+            int digit = Character.getNumericValue(str.charAt(i));
+            if (digit % 2 != 0) { // если цифра нечетная
+                return "FALSE";
             }
         }
 
-        if (flag) {
-            return "true";
-        } else {
-            return "false";
-        }
+        return "TRUE";
     }
 
     public static void main(String[] args) {
